@@ -1,6 +1,6 @@
-#🎵Singer Mashup Generator
+🎵Singer Mashup Generator
 
-##Project Overview
+#Project Overview
 
 Mashup Video Generator is a Flask-based web service that allows users to generate a custom mashup of their favorite singer's songs.
 
@@ -36,7 +36,7 @@ This project demonstrates backend processing, media handling, web integration, a
 
 #Tech Stack
 
-## Backend
+#Backend
 - Python
 - Flask
 - yt-dlp
@@ -44,11 +44,11 @@ This project demonstrates backend processing, media handling, web integration, a
 - smtplib
 - zipfile
 
-## Frontend
+#Frontend
 - HTML
 - CSS
 
-## Media Processing
+#Media Processing
 - FFmpeg
 
 ---
@@ -66,28 +66,28 @@ Before running this project, ensure the following are installed:
 
 #Installation Guide
 
-## Clone the Repository
+#Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/mashup-video-generator.git
 cd mashup-video-generator
 ```
 
-##Create Virtual Environment (Recommended)
+#Create Virtual Environment (Recommended)
 
-### Windows
+#Windows
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### Mac/Linux
+#Mac/Linux
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-##Install Dependencies
+#Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -135,22 +135,22 @@ http://127.0.0.1:5000/
 ----
 #System Architecture
 
-##Frontend Layer
+#Frontend Layer
 - HTML form collects user input.
 - Sends POST request to Flask backend.
 
-##Flask Backend
+#Flask Backend
 - Validates input data.
 - Calls mashup processing functions.
 - Handles file compression and email delivery.
 
-##Processing Layer
+#Processing Layer
 - yt-dlp → Downloads videos
 - FFmpeg → Converts media formats
 - MoviePy / pydub → Clips and merges media
 - zipfile → Compresses final output
 
-##Email Service Layer
+#Email Service Layer
 - smtplib sends ZIP file to user’s email.
 
 ---
